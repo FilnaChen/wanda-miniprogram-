@@ -1,0 +1,79 @@
+<import src="../template/con_item.wxml" />
+<import src="../template/footer.wxml" />
+<!--顶部轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" class="header_swiper"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"          mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!--精选限时抢购 -->
+<view class="time_choose">
+<view class="choose_title">
+<image src="../../common/images/clock.jpg" mode="widthFix"></image>
+<text>精选限时抢购</text>
+</view>
+<view class="choose_icon" bindtap="toSale">
+<text>更多</text>
+<image src="../../common/images/right_arrow.png" mode="widthFix"></image>
+</view>
+</view>
+<!-- 推荐轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class="intro_swiper">
+  <block>
+    <swiper-item class="intor_swiper_con">
+      <view class="intro_swiper_text">
+        <text class="swiper_text_title">VQ鲜榨果汁-柠檬梨汁</text>
+        <text class="swiper_text_time">距结束：13小时3分钟</text>
+        <text class="swiper_text_price1">￥8元  </text>
+        <text class="swiper_text_price2">￥13元</text>
+      </view>
+      <view class="intro_swiper_image">
+        <image src="../../common/images/fruit.jpg" mode="widthFix"></image>
+      </view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item class="intor_swiper_con">
+      <view class="intro_swiper_text">
+        <text class="swiper_text_title">VQ鲜榨果汁-柠檬梨汁</text>
+        <text class="swiper_text_time">距结束：13小时3分钟</text>
+        <text class="swiper_text_price1">￥8元  </text>
+        <text class="swiper_text_price2">￥13元</text>
+      </view>
+      <view class="intro_swiper_image">
+        <image src="../../common/images/fruit.jpg" mode="widthFix"></image>
+      </view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item class="intor_swiper_con">
+      <view class="intro_swiper_text">
+        <text class="swiper_text_title">VQ鲜榨果汁-柠檬梨汁</text>
+        <text class="swiper_text_time">距结束：13小时3分钟</text>
+        <text class="swiper_text_price1">￥8元  </text>
+        <text class="swiper_text_price2">￥13元</text>
+      </view>
+      <view class="intro_swiper_image">
+        <image src="../../common/images/fruit.jpg" mode="widthFix"></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<!--首页主内容切换 -->
+<view class="tab">
+<view class="tab_title">
+<text wx:for="{{tab_title}}" bindtap="tabChange" data-index="{{index}}" style="color:{{tabIndex==index?'orange':'#ccc'}};border-bottom:{{tabIndex==index?'1px solid':'none'}}">{{item}}</text>
+</view>
+<view class="tab_content">
+<view wx:for="{{con_imgs}}" style="display:{{tabIndex==index?'block':'none'}}">
+<view wx:for="{{item.img}}">
+<template is="con_item" data="{{con_img:item}}"/>
+</view>
+</view>
+</view>
+</view>
+<template is="footer" data="{{footer_index:'../../common/images/index_active.png',footer_my:'../../common/images/my.png'}}"/>

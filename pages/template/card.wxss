@@ -1,0 +1,82 @@
+.card{
+  width:700rpx;
+  margin-top:20rpx;
+  background-color:#fff;
+  float:left;
+  border-radius:10rpx;
+  padding:10px;
+  margin-left:25rpx;
+  box-sizing:border-box;
+}
+.card_show{
+  width:100%;
+  float:left;
+
+}
+.card_show image{
+  width:250rpx;
+  float:left;
+  margin-right:30rpx;
+}
+.card_show_text{
+  display:flex;
+  flex-direction:column;
+  line-height:40rpx;
+}
+.card_show_title{
+  font-size:25rpx;
+}
+.card_show_intro{
+  font-size:20rpx;
+  color:#ccc;
+}
+.card_show_quan{
+  font-size:20rpx;
+}
+.card_show_price{
+  font-size:20rpx;
+  color:#ccc;
+}
+.card_icon{
+  padding:5rpx;
+  font-size:18rpx;
+  border:1px solid orange;
+  border-radius:5rpx;
+  color:orange;
+  float:left;
+  margin-top:10rpx;
+}
+.left_time{
+  font-size:20rpx;
+  color:orange;
+}
+.imme_purchase{
+  border-radius:7rpx;
+  line-height:40rpx;
+  font-size:25rpx;
+  background-color: orange;
+  color: #fff;
+  padding-left:5rpx;
+  padding-right:5rpx;
+  float:right;
+  margin-right:20rpx;
+  margin-top:20rpx;
+}
+.leftCircle{
+  width:30rpx;
+  height:30rpx;
+  border-radius:50%;
+  background-color:#eee;
+  position:relative;
+  left:-35rpx;
+  top:220rpx;
+}
+.rightCircle{
+  width:30rpx;
+  height:30rpx;
+  border-radius:50%;
+  background-color:#eee;
+  position:relative;
+  left:665rpx;
+  top:190rpx;
+}

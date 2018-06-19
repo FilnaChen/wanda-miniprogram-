@@ -1,0 +1,9 @@
+<import src="../template/card.wxml" />
+<view style="background-color:#eee;float:left;width:100%;">
+<scroll-view scroll-y style="height: 200px;"  bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="time_sale">
+<view wx:for="{{sale_name}}">
+<template is="card" data="{{sale_name:item}}"></template>
+</view>
+</scroll-view>
+<text class="toLower" style="display:{{lowerShow}}">我是有底线的</text>
+</view>

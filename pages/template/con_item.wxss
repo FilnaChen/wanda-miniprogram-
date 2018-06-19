@@ -1,0 +1,48 @@
+.con_item{
+  width:96%;
+  margin-left:2%;
+  float:left;
+  display:flex;
+  align-items:center;
+  margin-top:20rpx;
+}
+.con_item_image image{
+  width:250rpx;
+  margin-right:30rpx;
+}
+.con_item_intro{
+  line-height:40rpx;
+  width:250rpx;
+  margin-right:60rpx;
+}
+.con_item_intro_title{
+  font-size:28rpx;
+  display:block;
+}
+.con_item_intro_place{
+  font-size:22rpx;
+  color:#ccc;
+}
+.con_item_price{
+  width:200rpx;
+  line-height:40rpx;
+}
+.con_item_price_free{
+  color:#00ff00;
+  font-size:22rpx;
+  display:block;
+}
+.con_item_price_original{
+  font-size:20rpx;
+  text-decoration:line-through;
+  color:#ccc;
+}
+.con_item_price_fetch{
+  width:60rpx;
+  height:30rpx;
+  line-height:30rpx;
+  text-align:center;
+  font-size:22rpx;
+  background-color:#00ff00;
+  color:#fff;
+}

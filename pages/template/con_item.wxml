@@ -1,0 +1,16 @@
+<template name="con_item">
+<view class="con_item">
+<view class="con_item_image">
+<image src="{{con_img}}" mode="widthFix"></image>
+</view>
+<view class="con_item_intro">
+<text class="con_item_intro_title">万达影城 双人观影套餐</text>
+<text class="con_item_intro_place">广州萝岗万达广场</text>
+</view>
+<view class="con_item_price">
+<text class="con_item_price_free">免费领取</text>
+<text class="con_item_price_original">￥5.00</text>
+<view class="con_item_price_fetch">领取</view>
+</view>
+</view>
+</template>

@@ -1,0 +1,27 @@
+.footer{
+  width:100%;
+  position:fixed;
+  left:0;
+  bottom:0;
+  border-top:1px solid #eee;
+}
+.footer1{
+  width:100%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  display:flex;
+  background-color:#fff;
+  padding-top:10rpx;
+  padding-bottom:10rpx;
+}
+.footer_item{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:22rpx;
+}
+.footer_item image{
+  width:35rpx;
+}
